@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/img/calculator-3d-application-icon-png.webp"
+      type="image/x-icon"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="section-container">
+      <div class="container">
+        <div class="main">
+          <input type="text" id="input" />
+          <section class="key-container">
+            <button id="reset">AC</button>
+            <button>C</button>
+            <button value="%" onclick="solve('%')">%</button>
+            <button value="/" onclick="solve('/')">/</button>
+
+            <button value="7" onclick="solve('7')">7</button>
+            <button value="8" onclick="solve('8')">8</button>
+            <button value="9" onclick="solve('9')">9</button>
+            <button value="X" onclick="solve('*')">X</button>
+
+            <button value="4" onclick="solve('4')">4</button>
+            <button value="5" onclick="solve('5')">5</button>
+            <button value="6" onclick="solve('6')">6</button>
+            <button value="-" onclick="solve('-')">-</button>
+            <button value="1" onclick="solve('1')">1</button>
+            <button value="2" onclick="solve('2')">2</button>
+            <button value="3" onclick="solve('3')">3</button>
+            <button value="+" onclick="solve('+')">+</button>
+            <button class="wide" value="0" onclick="solve('0')">0</button>
+            <button value=".">.</button>
+            <button value="=" id="result" onclick="calculate()">=</button>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
